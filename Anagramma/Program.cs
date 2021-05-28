@@ -24,8 +24,14 @@ namespace Anagramma
             foreach (string word in sentence)
                 Console.Write(word + ' ');
         }
-
-
+        /// <summary>
+        /// Вывод в коносоль. Аргумент - строка
+        /// </summary>
+        /// <param name="sentence"></param>
+        public static void Print (string sentence)
+        {
+            Console.WriteLine("Ваша строка: {0}", sentence);
+        }
 
     }
 }
