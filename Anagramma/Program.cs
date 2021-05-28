@@ -7,8 +7,11 @@ namespace Anagramma
         static void Main(string[] args)
         {
             Anagram anagram = new Anagram();
+
             var sentence = anagram.GetWordsFromConsole();
+
             Print(anagram.ReverseEachWordIn(sentence));
+
             Console.ReadKey();
         }
 

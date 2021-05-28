@@ -12,15 +12,18 @@ namespace Anagramma
         /// <returns></returns>
         public string[] ReverseEachWordIn(string sentence)
         {
+            //На сколько здесь можно использовать встроенный Split? Хотя в задании не сказано на счет первой строки..
+            //  только , что разварачивать слова надо "руками"...
+
             string[] words = sentence.Split();
             string[] newSentence = new string[words.Length];
 
             for (int i = 0; i < words.Length; i++)
             {
-                newSentence[i] = ReverseOne(words[i]);
+                newSentence[i] = ReverseOne(words[i]);// существует альтернативная реализация, через перезапись строки в цикле
             }
 
-            return newSentence;
+            return newSentence; // здесь по аналогии тоже можно вернуть строку 
         }
 
         /// <summary>

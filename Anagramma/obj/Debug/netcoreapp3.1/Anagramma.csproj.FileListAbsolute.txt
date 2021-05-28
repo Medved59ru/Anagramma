@@ -1,0 +1,13 @@
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\bin\Debug\netcoreapp3.1\Anagramma.exe
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\bin\Debug\netcoreapp3.1\Anagramma.deps.json
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\bin\Debug\netcoreapp3.1\Anagramma.runtimeconfig.json
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\bin\Debug\netcoreapp3.1\Anagramma.runtimeconfig.dev.json
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\bin\Debug\netcoreapp3.1\Anagramma.dll
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\bin\Debug\netcoreapp3.1\Anagramma.pdb
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\obj\Debug\netcoreapp3.1\Anagramma.csprojAssemblyReference.cache
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\obj\Debug\netcoreapp3.1\Anagramma.AssemblyInfoInputs.cache
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\obj\Debug\netcoreapp3.1\Anagramma.AssemblyInfo.cs
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\obj\Debug\netcoreapp3.1\Anagramma.csproj.CoreCompileInputs.cache
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\obj\Debug\netcoreapp3.1\Anagramma.dll
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\obj\Debug\netcoreapp3.1\Anagramma.pdb
+C:\Users\afigi\Desktop\FoxMined\SourceCode\Anagramma\Anagramma\obj\Debug\netcoreapp3.1\Anagramma.genruntimeconfig.cache

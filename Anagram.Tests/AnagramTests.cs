@@ -11,9 +11,7 @@ namespace AnagramTests
         public void ReversOneWordTest()
         {
             var word = "Test1enD";
-
             Anagram anagram = new Anagram();
-
             var result = anagram.ReverseOne(word);
 
             Assert.AreEqual("Dnet1seT", result);
