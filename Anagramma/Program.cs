@@ -6,32 +6,20 @@ namespace Anagramma
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("ВВЕДИТЕ СЛОВО ИЛИ СЛОВА");
+            var sentence = Console.ReadLine();
             Anagram anagram = new Anagram();
-
-            var sentence = anagram.GetWordsFromConsole();
-
             Print(anagram.ReverseEachWordIn(sentence));
 
             Console.ReadKey();
         }
 
-        /// <summary>
-        /// Вывод в консоль. Аргумент - массив строк.
-        /// </summary>
-        /// <param name="sentence"></param>
         public static void Print(string[] sentence)
         {
             foreach (string word in sentence)
-                Console.Write(word + ' ');
+                Console.Write(word);
         }
-        /// <summary>
-        /// Вывод в коносоль. Аргумент - строка
-        /// </summary>
-        /// <param name="sentence"></param>
-        public static void Print (string sentence)
-        {
-            Console.WriteLine("Ваша строка: {0}", sentence);
-        }
+        
 
     }
 }

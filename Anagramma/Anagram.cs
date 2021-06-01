@@ -1,36 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Anagramma
 {
     public class Anagram
     {
-        /// <summary>
-        /// Разворачивает каждое слово во введнном в консоль предложении. Аргумент - строка. 
-        /// Возвращает массив строк
-        /// </summary>
-        /// <param name="sentence"></param>
-        /// <returns></returns>
+        
         public string[] ReverseEachWordIn(string sentence)
         {
-            //На сколько здесь можно использовать встроенный Split? Хотя в задании не сказано на счет первой строки..
-            //  только , что разварачивать слова надо "руками"...
-
-            string[] words = sentence.Split();
+           
+            var words = CutBySpace(sentence);
             string[] newSentence = new string[words.Length];
 
             for (int i = 0; i < words.Length; i++)
             {
-                newSentence[i] = ReverseOne(words[i]);// существует альтернативная реализация, через перезапись строки в цикле
+                newSentence[i] = ReverseOne(words[i]);
             }
 
-            return newSentence; // здесь по аналогии тоже можно вернуть строку 
+            return newSentence;  
         }
 
-        /// <summary>
-        /// Разварачивает слово переданное в качестве аргумента
-        /// </summary>
-        /// <param name="word"></param>
-        /// <returns></returns>
+       
         public string ReverseOne(string word)
         {
             int index = word.Length;
@@ -66,21 +56,33 @@ namespace Anagramma
             return wordResult;
         }
 
-        #region ввод с консоли
-
-        /// <summary>
-        /// Получение данных с консоли.
-        /// </summary>
-        /// <returns></returns>
-        public string GetWordsFromConsole()
+        
+        public string[] CutBySpace(string sentence)
         {
-            Console.WriteLine("ВВЕДИТЕ СЛОВО ИЛИ СЛОВА");
-            string words = Console.ReadLine();
-            return words;
+            
+            var tempArray = sentence.ToCharArray();
+            int index = 0;
+            string word = "";
+            List<string> sentenceCutBySpace = new List<string>();
+
+            while (index < tempArray.Length)
+            {
+                
+                while (index < tempArray.Length)
+                {
+                    word += tempArray[index];
+                    if (Char.IsWhiteSpace(tempArray[index]))
+                        break;
+                    index++;
+                }
+                sentenceCutBySpace.Add(word);
+                word = "";
+                index++;
+
+            }
+            var resultArray = sentenceCutBySpace.ToArray();
+            return resultArray;
         }
-
-
-        #endregion
 
     }
 }

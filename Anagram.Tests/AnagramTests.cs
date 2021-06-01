@@ -27,9 +27,24 @@ namespace AnagramTests
             var result = anagram.ReverseEachWordIn(sentence);
 
             Assert.AreEqual(3, result.Length);
-            Assert.AreEqual("Dnet1seT", result[0]);
-            Assert.AreEqual("roF4", result[1]);
+            Assert.AreEqual("Dnet1seT ", result[0]);
+            Assert.AreEqual("roF4 ", result[1]);
             Assert.AreEqual("uoY", result[2]);
+
+        }
+        [TestMethod]
+        public void CutSentece()
+        {
+            var sentence = "Test1enD For4 You";
+
+            Anagram anagram = new Anagram();
+
+            var result = anagram.CutBySpace(sentence);
+
+            Assert.AreEqual(3, result.Length);
+            Assert.AreEqual("Test1enD ", result[0]);
+            Assert.AreEqual("For4 ", result[1]);
+            Assert.AreEqual("You", result[2]);
 
         }
     }
