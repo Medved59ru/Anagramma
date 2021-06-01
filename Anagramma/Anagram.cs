@@ -31,7 +31,7 @@ namespace Anagramma
             index = 0;
             while (index < endIndex)
             {
-                //игнорируем "не буквы"
+               
                 if (!char.IsLetter(wordToArray[index]))
                 {
                     index++;
@@ -40,7 +40,7 @@ namespace Anagramma
                 {
                     endIndex--;
                 }
-                // обмен букв в массиве местами
+                
                 else
                 {
                     char tempChar = wordToArray[index];
@@ -51,7 +51,7 @@ namespace Anagramma
                 }
             }
 
-            // возвращаем строку
+           
             string wordResult = new String(wordToArray);
             return wordResult;
         }
